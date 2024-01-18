@@ -1,6 +1,5 @@
+-- An SQL script that creates a table users with the attributes: id, email, name
 CREATE TABLE IF NOT EXISTS `users` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `email` VARCHAR(255) NOT NULL UNIQUE,
-  `name` VARCHAR(255),
-  PRIMARY KEY (`id`)
-) 
+	`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`email` VARCHAR(255) NOT NULL UNIQUE,
+	`name` VARCHAR(255));
