@@ -14,7 +14,7 @@ def cached_content_fun(method):
     def wrapper(url: str):
         cached_content = data.get(f"cached:{url}")
         if cached_content:
-            return cached_content.decode('utf-8')
+            return cached_content.decode("utf-8")
 
         content = method(url)
         data.setex(f"cached:{url}", 10, content)
